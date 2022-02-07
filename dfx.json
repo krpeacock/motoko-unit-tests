@@ -1,35 +1,13 @@
 {
   "canisters": {
-    "motoko_unit_tests": {
-      "main": "src/motoko_unit_tests/main.mo",
+    "example": {
+      "main": "src/example/main.mo",
       "type": "motoko"
-    },
-    "motoko_unit_tests_assets": {
-      "dependencies": [
-        "motoko_unit_tests"
-      ],
-      "frontend": {
-        "entrypoint": "src/motoko_unit_tests_assets/src/index.html"
-      },
-      "source": [
-        "src/motoko_unit_tests_assets/assets",
-        "dist/motoko_unit_tests_assets/"
-      ],
-      "type": "assets"
     }
   },
   "defaults": {
     "build": {
-      "args": "",
-      "packtool": ""
+      "packtool": "vessel sources"
     }
-  },
-  "dfx": "0.8.6",
-  "networks": {
-    "local": {
-      "bind": "127.0.0.1:8000",
-      "type": "ephemeral"
-    }
-  },
-  "version": 1
+  }
 }
